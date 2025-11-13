@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Hogar - Tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Asset/Css/global.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Asset/Css/tienda.css"> 
+    <script defer type="module" src="../Asset/JS/productos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="../Asset/Img/aikearoma.svg" alt="Aroma Hogar logo" class="logo">
+        </a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Datos/politica.html">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="../Auth/loging.html" class="log">Iniciar Sesión</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-tienda">
+        <div class="tienda-container">
+            
+            <div class="tienda-header">
+                <h1>Nuestros Difusores</h1>
+                <p>Descubre nuestra colección y encuentra la calma y el bienestar para tu hogar.</p>
+            </div>
+            
+            <!-- 1. BARRA DE FILTROS -->
+            <div class="filtros-bar">
+                <div class="filtros-selects">
+                    <label for="categoria">Categoría
+                        <select id="categoria">
+                            <option value="todos">Todos</option>
+                            <option value="ultrasonico">Ultrasónico</option>
+                            <option value="electricos">Eléctricos</option>
+                            <option value="varitas">Varitas</option>
+                        </select>
+                    </label>
+                    <label for="precio">Rango de Precio
+                        <select id="precio">
+                            <option value="any">Cualquier precio</option>
+                            <option value="low">$10 - $30</option>
+                            <option value="medium">$30 - $50</option>
+                            <option value="high">$50+</option>
+                        </select>
+                    </label>
+                    <label for="color">Color
+                        <select id="color">
+                            <option value="any">Cualquier color</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="madera">Madera</option>
+                            <option value="negro">Negro</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="filtros-orden">
+                    <label for="ordenar">Ordenar por
+                        <select id="ordenar">
+                            <option value="destacado">Destacado</option>
+                            <option value="menor-precio">Menor Precio</option>
+                            <option value="mayor-precio">Mayor Precio</option>
+                            <option value="novedad">Novedad</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 2. CUADRÍCULA DE PRODUCTOS -->
+            <div class="productos-grid">
+                
+                <!-- EJEMPLO DE PRODUCTO (Repetir 8 veces para la maqueta) -->
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <!-- Usando Placeholders con el estilo visual de la maqueta -->
+                        <img src="../Asset/Img/dif1.jpg" alt="Difusor Ultrasónico 'Zenith'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor Ultrasónico 'Zenith'</h4>
+                        <p class="precio">$4.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="../Asset/Img/dif2.jpg" alt="Difusor de Varitas 'Brisa'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor de Varitas 'Brisa'</h4>
+                        <p class="precio">$4.500</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="../Asset/Img/dif3.jpg" alt="Difusor Eléctrico 'Oasis'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor Eléctrico 'Oasis'</h4>
+                        <p class="precio">$5.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="../Asset/Img/dif4.jpg" alt="Difusor de Cerámica 'Calma'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor de Cerámica 'Calma'</h4>
+                        <p class="precio">$5.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="../Asset/Img/dif5.jpg" alt="Difusor Ultrasónico 'Aurora'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor Ultrasónico 'Aurora'</h4>
+                        <p class="precio">$6.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="../Asset/Img/238faecc-be91-43c1-b47c-2ce23b0b5938.jpg" alt="Difusor de Varitas 'Bosque'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor de Varitas 'Bosque'</h4>
+                        <p class="precio">$9.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="../Asset/Img/opciones.jpg" alt="Difusor Eléctrico 'Nébula'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor Eléctrico 'Nébula'</h4>
+                        <p class="precio">$10.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-imagen-wrapper">
+                        <img src="https://placehold.co/300x300/f5e3ce/333?text=Difusor+Sereno" alt="Difusor de Cerámica 'Sereno'">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Difusor de Cerámica 'Sereno'</h4>
+                        <p class="precio">$10.000</p>
+                        <button class="btn-agregar">
+                            <i class="fa-solid fa-cart-plus"></i> Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- 3. PAGINACIÓN -->
+            <div class="paginacion">
+                <a href="#" class="arrow-disabled"><i class="fa-solid fa-chevron-left"></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span class="ellipsis">...</span>
+                <a href="#">6</a>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Asumiendo que el footer usa la clase .footer-wrapper y global.css -->
+    <footer class="footer-wrapper">
+        <!-- Contenido del Footer -->
+    </footer>
+
+</body>
+</html>

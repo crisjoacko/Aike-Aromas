@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%
+}
+
+body{
+    font-size: 100%;
+    padding-top: 0.5rem;
+    margin: 0;
+    font-family:"Manrope", sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+.header{
+    padding: 0.8rem 2.5rem;
+    border-bottom: #eee 1px solid;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.logo{
+    width: clamp(5rem, 10vw, 11rem);
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap:1.2rem;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.3rem 0;
+}
+
+ul li a:hover{
+    color: #64c503;
+    transition: 0.3s ease;
+}
+.log{
+    background-color: #64c503;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.log:hover{
+    transition: ease 0.3s;
+    color: #333;
+    background-color: #52a302;
+}
+
+
+.fa-cart-shopping{
+    color: #64c503;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.fa-cart-shopping:hover{
+    color: #52a302;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.8rem 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: clamp(6rem, 25vw, 8rem);
+    }
+
+    .nav-bar ul {
+        gap: 1rem;
+        font-size: 1.5rem; 
+    }
+
+    ul li a {
+        font-size: 0.9rem; 
+    }
+}

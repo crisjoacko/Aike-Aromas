@@ -1,0 +1,320 @@
+.presentacion{
+    background-image: url(/Asset/Img/presentacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.presentacion h2{
+    font-size: 3rem;
+}
+
+.presentacion p{
+    font-size: 1.4rem;
+}
+
+.presentacion button{
+    background-color: #64c503;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    box-shadow: none;
+}
+
+.presentacion button:hover{
+    background-color: #52a302;
+}
+
+
+/*########################################################*/
+
+.productos{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.productos h2{
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+
+.difusores-content{
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.difusores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+
+.difusores img {
+    width: 100%; 
+    height: 50rem; 
+    object-fit: cover;
+    display: block;
+    border-radius: 0.3rem; 
+    margin-bottom: 0.5rem; 
+}
+
+
+.btn-carrito{
+    background-color: #64c503;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    box-shadow: none;
+}
+
+.btn-carrito:hover{
+    background-color: #52a302;
+}   
+
+
+/*###########################################################*/
+
+.sobre-nosotros-full{
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+    margin: 3rem 0;
+}
+
+.sobre-nosotros{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2.5vw;
+}
+
+.texto-sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap: 1.2rem;;
+    text-align: left;
+    align-items: flex-start;
+    padding-right: 1.5rem;
+}
+
+.texto-sobre-nosotros h2{
+    font-size: 3rem;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.texto-sobre-nosotros p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 90%;
+}
+
+
+.btn-conocer-mas{
+    font-size: 1.5rem;
+    background-color: #64c503;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+
+.btn-conocer-mas:hover{
+    background-color: #52a302;
+}
+
+
+
+.img-lateral{
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.img-lateral img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*########################################################################*/
+
+.footer{
+    background-color: #f7f7f7;
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0%;
+    border-top: 1px solid #ddd;
+}
+
+.logo-footer{
+    display: flex;
+    width: 100%;
+    gap: 10rem;
+    padding: 0.5rem ;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.info h3, .info-nav h4, .siguenos h4{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.info-nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons a{
+    margin-right: 0.8rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.copyright{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.2rem;
+    border-top: 1px solid #ddd;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: #888;
+    width: 100%;
+
+}
+    /*
+display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 3vh;
+    padding-top: 0.5rem;
+    border: #333 1px solid;
+}*/
+@media (max-width: 768px) {
+    
+    /* PRESENTACIÓN */
+    .presentacion {
+        height: 60vh;
+        margin: 1.5rem 0;
+    }
+    .presentacion h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .presentacion p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .presentacion button {
+        font-size: 1.2rem;
+    }
+
+    /* PRODUCTOS */
+    .productos h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0;
+    }
+    .difusores-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .difusores {
+        max-width: 90%;
+    }
+    .difusores img {
+        height: auto; 
+        max-height: 300px;
+    }
+
+    .sobre-nosotros-full {
+        padding: 2rem 0;
+        margin: 1.5rem 0;
+    }
+    .sobre-nosotros {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 5vw;
+    }
+    .texto-sobre-nosotros {
+        flex: 1 1 100%;
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .texto-sobre-nosotros h2 {
+        font-size: 2rem;
+    }
+    .texto-sobre-nosotros p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .img-lateral {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

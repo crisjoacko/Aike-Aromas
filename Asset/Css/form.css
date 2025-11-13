@@ -1,0 +1,173 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 3rem;
+    background-color: #f7f7f7;
+    min-height: 90vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+    width: 90%;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 2rem;
+    color: #333;
+}
+
+.container p{
+    font-size: 1rem;
+    color: #64c503;
+    font-weight: 600;
+}
+
+/*##################################################*/
+.form-container{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 30rem;
+    margin-bottom: 3rem;;
+    text-align: center;
+}
+
+
+#registro-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.campo-control {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.3rem;
+    font-size: 0.95rem; 
+    position: relative;
+}
+
+.campo-contol{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.3rem;
+    font-size: 0.95rem; 
+    position: relative;
+}
+
+.campo-control label{
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.campo-fila{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.campo-fila .campo-control{
+    flex: 1;
+    min-width: 45%;
+}
+
+.campo-control input{
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    background-color: #f0fff0; 
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.2s; 
+}
+
+.campo-control input::placeholder{
+    color: #64c503;
+    opacity: 0.8;
+}
+
+.campo-control input:focus{
+    outline: none;
+    border-color: #64c503;
+    box-shadow: 0 0 0 2px rgba(100, 197, 3, 0.3);
+}
+
+#btn-crear{
+    background-color: #00ff00;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 700; 
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s; 
+}
+
+#btn-crear:hover{
+    background-color: #00e600;
+}
+
+.terminos-privacidad, .iniciar-sesion{
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.terminos-privacidad a, .iniciar-sesion a{
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.iniciar-sesion a{
+    color: #64c503;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.campo-control .error-text{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+    height: 1rem;
+    text-align: left;
+    display: none;
+}
+
+.campo-control.error input{
+    border-color: red !important;
+    background-color: #fff0f0;
+}
+
+.campo-control.error .error-text{
+    display: block;
+}
+
+
+.fa-eye-slash{
+    position: absolute;
+    top: 2.2rem; 
+    right: 0.8rem;
+    color:#64c503;
+    cursor: pointer;
+}

@@ -1,0 +1,135 @@
+.main-politicas {
+    padding: 2rem 0 4rem 0;
+}
+
+.politicas-container {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    background-color: white; 
+}
+
+/* Encabezado */
+.politicas-header {
+    margin-bottom: 2.5rem;
+}
+
+.politicas-header h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.politicas-header .subtitle {
+    font-size: 1.1rem;
+    color: #64c503; 
+    font-weight: 500;
+}
+
+
+.politicas-nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+    overflow-x: auto; 
+}
+
+.politicas-nav .nav-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    white-space: nowrap; 
+    transition: color 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.politicas-nav .nav-link:hover {
+    color: #333;
+}
+
+.politicas-nav .nav-link.active {
+    color: #64c503;
+    border-bottom: 3px solid #64c503; 
+    font-weight: 600;
+}
+
+/* Contenido Principal */
+.politicas-content {
+    /* Estilo del contenido de texto */
+    line-height: 1.7;
+    color: #555;
+}
+
+.politicas-content section {
+    margin-bottom: 3rem;
+}
+
+.politicas-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.politicas-content .sub-heading {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.politicas-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.politicas-content .intro {
+    font-weight: 500;
+    color: #333; /* Texto introductorio ligeramente más oscuro */
+}
+
+.politicas-content ol {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.politicas-content ol li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* --- Media Queries para Responsive --- */
+
+@media (max-width: 768px) {
+    .politicas-header h1 {
+        font-size: 2.5rem;
+    }
+    .politicas-header .subtitle {
+        font-size: 1rem;
+    }
+    
+    .politicas-nav {
+        gap: 1rem;
+        padding-bottom: 0.5rem; 
+    }
+
+    .politicas-nav .nav-link {
+        font-size: 1rem;
+        padding: 0.3rem 0;
+    }
+
+    .politicas-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .politicas-content .sub-heading {
+        font-size: 1.2rem;
+    }
+
+    .politicas-content p, .politicas-content ol li {
+        font-size: 0.95rem;
+    }
+}
