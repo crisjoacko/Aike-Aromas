@@ -104,3 +104,51 @@
     align-items: center;
 
 }
+
+@media (max-width: 768px) {
+
+    /* 1. LAYOUT PRINCIPAL (GRID a COLUMNA) */
+    .cart-layout {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        padding: 1rem 1rem;
+        max-width: 100%;
+    }
+    
+    /* ----------------------------------- */
+    /* 2. ITEMS DEL CARRITO (FLEXBOX) */
+    /* ----------------------------------- */
+    .cart-item {
+        flex-wrap: wrap; 
+        padding: 1rem 0;
+        justify-content: flex-start; 
+        gap: 1rem;
+    }
+
+    .item-img {
+        width: 60px; 
+        height: 60px;
+        margin-right: 0;
+    }
+
+    .item-details {
+        flex-basis: calc(100% - 75px); 
+        margin-right: auto; 
+    }
+    
+    .item-quantity-control, .item-total {
+        flex-basis: auto; 
+        margin: 0 0.5rem;
+    }
+
+    /* Mueve el botón de eliminar a la derecha */
+    .remove-btn {
+        margin-left: auto; 
+        order: 10; 
+    }
+
+    /* 3. RESUMEN DEL PEDIDO */
+    .cart-summary {
+        padding: 1.5rem; 
+    }
+}
