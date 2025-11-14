@@ -163,11 +163,3 @@
     display: block;
 }
 
-
-.fa-eye-slash{
-    position: absolute;
-    top: 2.2rem; 
-    right: 0.8rem;
-    color:#64c503;
-    cursor: pointer;
-}
