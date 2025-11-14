@@ -1,0 +1,106 @@
+.cart-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    padding: 2rem 0;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+
+/* ###### DISEÑO DEL ITEM DE PRODUCTO ####### */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 1.5rem;
+}
+
+.quantity-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.quantity-input {
+    padding: 0 0.5rem;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.continue-shopping{
+    color: #64c503;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 1rem;
+}
+
+
+/*############### RESUMEN DEL PEDIDO ##############*/
+.cart-summary {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.summary-line.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: #6a9c5c; /* Color verde de tu diseño */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.compra-segura{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+
+}

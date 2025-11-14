@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Hogar - Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Asset/Css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Asset/Css/carrito.css">
+    <script defer type="module" src="../Asset/JS/carrito.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="../Asset/Img/aikearoma.svg" alt="Aroma Hogar logo" class="logo">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="../Datos/politica.html">Nosotros</a></li>
+                <li><a href="../Auth/loging.html" class="log">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-carrito">
+        <h1>Carrito de Compras</h1>
+
+        <div class="cart-layout"> 
+            
+            <section class="cart-items">
+                
+                <div class="cart-item">
+                    <img src="../Asset/Img/dif1.jpg" alt="Difusor Volcánico" class="item-img">
+                    <div class="item-details">
+                        <p class="item-name">Difusor Volcánico - Color Negro</p>
+                        <p class="item-price-unit">$10.000</p>
+                    </div>
+                    
+                    <div class="item-quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity-input">2</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    
+                    <p class="item-total">$199.96</p>
+                    <button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+                
+                <a href="../Tienda/productos.html" class="continue-shopping">← Seguir Comprando</a>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Resumen del Pedido</h2>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span class="summary-value">$212.46</span>
+                </div>
+                <div class="summary-line">
+                    <span>Envío</span>
+                    <span class="summary-value">Calculado en el siguiente paso</span>
+                </div>
+                <hr>
+                <div class="summary-line total">
+                    <span>Total</span>
+                    <span class="summary-value">$212.46</span>
+                </div>
+                
+                <button class="checkout-btn">Finalizar Compra</button>
+                <p class="compra-segura">Pago Seguro<i class="fa-solid fa-lock"></i></p>
+            </aside>
+        </div>
+    </main>
+    </body>
+</html>
